@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Example</title>
+  <link rel="stylesheet" href="https://in.pinterest.com/pin/288723026125185654/">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      }
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+      
+    }
+    .navbar .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+      gap: 50px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #00bfff;
+    }
+    
+    
+    .parent{
+        
+        height: 92vh;
+        display: flex;
+        background-image: url("https://i.pinimg.com/736x/9c/a2/f0/9ca2f060b65c185b83cd02addf357a05.jpg") ;
+      background-position: center;
+      
+    }
+    .child {
+    text-align: center;
+    max-width: 809px;
+    border: 10px solid #041b23;
+    margin: auto;
+    border-radius: 20px;
+    color:black;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: greenyellow;
+    font-size: 25px;
+   
+    background: transparent;
+    backdrop-filter: blur(18px);
+}
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      background-color: plum;
+      box-shadow: 0 0 30px #000;
+    }
+
+    .image-box {
+      flex: 1;
+      padding: 20px;
+      
+    }
+
+    .image-box img {
+      width: 80%;
+      height: 75vh;
+      border-radius: 10px;
+      border: 8px solid plum;
+      box-shadow: 0 0 30px black;
+    }
+
+    .content-box {
+      flex: 1;
+      padding: 20px;
+       border: 8px solid plum;
+          border-radius: 10px;
+         box-shadow: 0 0 30px black; 
+    }
+
+    .content-box h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    align-content: center;
+    color: antiquewhite;
+    }
+
+    .content-box p {
+      font-size: 18px;
+      color: white;
+    }
+    .content-box {
+      background-color:palevioletred;
+      height: 280px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+        .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #000;
+}
+.card {
+    background-color: white;
+    width: 325px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+  width: 100%;
+  height: 420px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px white;
+}
+.para{
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerContainer{
+  margin-top: 70px;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="title">marwa resturarent</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="center-content" id="home">
+  
+    <p></p>
+  </div>
+  <div class="parent">
+    <div class="child">
+     We aim to provide high-quality food to our customers and ensure customers satisfaction through innovation and dedication.   
+    </div>
+  </div>
+  <div class="container" id="about">
+    <div class="image-box">
+      <img src="Pictures/OIP.jpeg" alt="Sample Image" >
+    </div>
+    <div class="content-box">
+      <h2>Our Mission</h2>
+      <p>At marwa,we provide a good and healthy food no frozen meats.and good ambience. Every order you place makes a difference.</p>
+    </div>
+  </div>
+<div class="para" id="services">
+  <p >100% healthy</p>
+  </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://in.pinterest.com/pin/43910165110766852/" height="22px" width="20">
+        </div>
+        <div class="card">
+           <img src="https://in.pinterest.com/pin/102527329010714791/g" height="22px" width="20">
+        </div>
+        <div class="card">
+           <img src="https://in.pinterest.com/pin/588353138858783758/" height="22px" width="20">
+        </div>
+        
+    </div>
+    <div>
+        <div class="container" id="contact">
+        <div class="content-box">
+        <h2>SRI MATHY A</h2>
+        <h1>marwa123@gmail.com</h1><br>
+        <p></p><br>8428280672
+        <p>No.88, Railway Station Road, Achamangalam, Tirupathur, Tamil Nadu 635601.</p><br>
+        <button>
+          Learn More
+        </button>
+        </div>
+        </div>
+    <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">our Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2025; Designed by <span class="designer">SRI MATHY A</span></p>
+    </div>
+</footer>
+</body>
+</html>
